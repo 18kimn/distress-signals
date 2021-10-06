@@ -16,14 +16,12 @@ function App() {
 
   return (
     <div className="App">
+      <h1 style={{fontWeight: 'bold'}}>HELP!</h1>
+      <p style={{fontSize: '3rem'}}>Notes on the use of distress signals</p>
+      <div id="spacer" style={{height: '4rem'}}></div>
       <div className="container">
         {!soundName ? (
           <>
-            <h1 style={{fontWeight: 'bold'}}>HELP!</h1>
-            <p style={{fontSize: '3rem'}}>
-              Notes on the use of distress signals
-            </p>
-            <div id="spacer" style={{height: '4rem'}}></div>
             <button className="startButton" onClick={() => setAllowed(true)}>
               <p>Tap to allow NFC reading.</p>
             </button>

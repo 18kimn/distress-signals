@@ -11,7 +11,7 @@ const keys = {
 
 const playSound = (soundname) => {
   if (!keys[soundname]) return
-  const filename = `src/sound/${keys[soundname]}`
+  const filename = `sound/${keys[soundname]}`
   const audio = new Audio(filename)
   audio.play()
   return audio
