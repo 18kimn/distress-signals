@@ -1,42 +1,68 @@
+@font-face {
+  font-family: Helvetica;
+  src: url('Helvetica.woff2') format('woff2');
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 12pt;
+  font-family: 'Helvetica';
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f46820;
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  place-items: center;
+  place-content: center;
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: 3rem;
+  width: fit-content;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  max-width: 80vw;
+  padding: 1rem;
+}
+
+.startButton {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  transition: background 0.4s;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.startButton:hover {
+  background: #ffffff radial-gradient(circle, transparent 1%, #ececec 1%) center/15000%;
+}
+.startButton:active {
+  background-color: #ffffff;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.buttonContainer {
+  background-color: none;
+  display: 'flex';
+  place-items: 'center';
+  place-content: 'center';
 }
